@@ -1,0 +1,31 @@
+// Colors
+// @import "~react-toolbox/lib/colors";
+// $color-primary: $palette-blue-500;
+// $color-primary-dark: $palette-blue-700;
+@import '../node_modules/bulma/bulma';
+
+.navbar-bg {
+    background-color: #000;
+    .nav {
+        background-color: #000
+    }
+    .title {
+        color: #686868;
+        font-weight: 600;
+    }
+}
+
+.twitter {
+    color: #55acee !important; // Override bulma
+    border-color: #55acee;
+}
+
+.github {
+    color: #000 !important; // Override bulma
+    border-color: #000;
+} // Needed otherwise iframes show a disabled scrollbar
+html,
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
